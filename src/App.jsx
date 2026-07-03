@@ -3,6 +3,10 @@ import { useState } from 'react'
 import './App.css'
 import Product from './Product'
 import UserName from './UserName';
+import AmazonCards from './AmazonCards';
+import ProductsTab from './ProductsTab';
+
+
 // import LotteryGame from './LotteryGame'
 
 function App() {
@@ -14,7 +18,11 @@ function App() {
     <>
       {/* <Product n={3} features={features}/> */}
       {/* <LotteryGame /> */}
-      <UserName username="mihir" color="blue" />
+      {/* <UserName username="mihir" color="blue" /> */}
+      <h1 style={{textAlign:"center"}}>blockbuster deals !</h1>
+      <hr/>
+
+      <ProductsTab/>
     </>
   )
 }
