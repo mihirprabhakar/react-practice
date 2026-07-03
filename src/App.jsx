@@ -2,15 +2,19 @@ import { useState } from 'react'
 
 import './App.css'
 import Product from './Product'
+import UserName from './UserName';
 // import LotteryGame from './LotteryGame'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  let features=["hi-tech","durable","fast"];
+  let features2={a:"hi-tech",b:"durable",c:"fast"};
 
   return (
     <>
-      <Product n={3}/>
+      {/* <Product n={3} features={features}/> */}
       {/* <LotteryGame /> */}
+      <UserName username="mihir" color="blue" />
     </>
   )
 }

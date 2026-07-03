@@ -1,7 +1,13 @@
 import React from 'react'
 import {useState} from "react";
-const Product = ({n}) => {
+const Product = ({n,features}) => {
+  console.log(features);
     const[count,setCount]=useState(0);
+    const [loading,setLoading]=useState(false);
+    const stylingAdd={backgroundColor:"black",color:"white"};
+    const setTheLoad=()=>{
+      setLoading(!loading);
+    }
     const clickBy=()=>{
         setCount(()=>{
             return count+1;
@@ -15,6 +21,16 @@ const Product = ({n}) => {
       <p>count is : {count}</p>
       <button onClick={clickBy}>Increase the count</button>
       <p>this is value of n :{n}</p>
+      {/* <p>{features}</p> */}
+      <ul>
+      {features.map((feature)=>{
+        return <li key={feature}>{feature}</li>
+      })}</ul>
+      {/* <p>{features}</p> */}
+      <button onClick={setTheLoad} style={stylingAdd}>Load the page</button>
+      {loading&&(
+        <p>Loading the entire page</p>
+      )}
     </div>
   )
 }
