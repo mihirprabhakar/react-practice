@@ -1,0 +1,124 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#6a11cb,#2575fc,#00c6ff);
+    background-size:300% 300%;
+    animation:gradientMove 8s ease infinite;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.lottery-container{
+    width:430px;
+    padding:35px;
+    text-align:center;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    border-radius:25px;
+    border:1px solid rgba(255,255,255,.3);
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+    color:white;
+}
+
+.lottery-container h1{
+    font-size:2rem;
+    margin-bottom:25px;
+    letter-spacing:1px;
+}
+
+.ticket{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    margin:30px 0;
+}
+
+.ticket span{
+    width:75px;
+    height:75px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+    font-weight:700;
+    border-radius:18px;
+    color:#fff;
+    background:linear-gradient(145deg,#ff6b6b,#ffb347);
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.25),
+        inset 0 2px 5px rgba(255,255,255,.3);
+    transition:.3s;
+}
+
+.ticket span:hover{
+    transform:translateY(-8px) rotate(8deg);
+}
+
+button{
+    margin-top:20px;
+    padding:14px 28px;
+    font-size:16px;
+    font-weight:600;
+    border:none;
+    border-radius:50px;
+    background:linear-gradient(45deg,#00e676,#00c853);
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
+button:hover{
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 15px 25px rgba(0,0,0,.35);
+}
+
+button:active{
+    transform:scale(.95);
+}
+
+.winner{
+    margin-top:25px;
+    font-size:1.6rem;
+    font-weight:700;
+    color:#ffe600;
+    animation:glow 1s infinite alternate;
+}
+
+@keyframes glow{
+    from{
+        text-shadow:
+            0 0 10px #fff,
+            0 0 20px #ffe600,
+            0 0 30px #ffe600;
+    }
+    to{
+        text-shadow:
+            0 0 20px #fff,
+            0 0 35px #ffeb3b,
+            0 0 50px #ffeb3b;
+    }
+}
+
+hr{
+    border:none;
+    height:1px;
+    background:rgba(255,255,255,.3);
+    margin:20px 0;
+}
