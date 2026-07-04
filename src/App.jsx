@@ -6,6 +6,7 @@ import UserName from './UserName';
 import ProductsTab from './ProductsTab';
 import LikeButton from './LikeButton';
 import Ludo from './Ludo';
+import TodoList from './TodoList';
 
 
 
@@ -24,7 +25,8 @@ function App() {
       {/* <UserName username="mihir" color="blue" /> */}
       {/* <h1 style={{textAlign:"center"}}>blockbuster deals !</h1>
       <hr/> */}
-      <Ludo />
+      {/* <Ludo /> */}
+      <TodoList />
 
 
       {/* <ProductsTab/> */}

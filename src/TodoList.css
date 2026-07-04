@@ -1,0 +1,78 @@
+body {
+    background: #f3f4f6;
+    font-family: Arial, sans-serif;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    width: 450px;
+    margin: 20px auto;
+}
+
+.todo-item {
+    background: #fff8b5;       /* Notepad yellow */
+    margin: 15px 0;
+    padding: 15px 20px;
+    border-left: 8px solid #f4c542;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-item span {
+    font-size: 18px;
+    font-weight: 500;
+    word-break: break-word;
+}
+
+.btn-group {
+    display: flex;
+    gap: 8px;
+}
+
+button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #1976d2;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #125ea7;
+}
+.task-input {
+    width: 70%;
+    padding: 14px 20px 14px 45px; /* Extra left padding for icon */
+    font-size: 16px;
+    border: 2px solid #d1d5db;
+    border-radius: 50px;
+    outline: none;
+    background: #fff url("https://cdn-icons-png.flaticon.com/512/622/622669.png") no-repeat 15px center;
+    background-size: 18px;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.task-input::placeholder {
+    color: #9ca3af;
+    font-style: italic;
+}
+
+.task-input:hover {
+    border-color: #60a5fa;
+    box-shadow: 0 6px 14px rgba(96, 165, 250, 0.2);
+}
+
+.task-input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.2),
+                0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+}
