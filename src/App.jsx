@@ -5,6 +5,8 @@ import Product from './Product'
 import UserName from './UserName';
 import ProductsTab from './ProductsTab';
 import LikeButton from './LikeButton';
+import Ludo from './Ludo';
+
 
 
 
@@ -22,7 +24,7 @@ function App() {
       {/* <UserName username="mihir" color="blue" /> */}
       {/* <h1 style={{textAlign:"center"}}>blockbuster deals !</h1>
       <hr/> */}
-      <LikeButton />
+      <Ludo />
 
 
       {/* <ProductsTab/> */}
