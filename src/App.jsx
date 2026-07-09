@@ -7,6 +7,8 @@ import ProductsTab from './ProductsTab';
 import LikeButton from './LikeButton';
 import Ludo from './Ludo';
 import TodoList from './TodoList';
+import Otp from './Otp';
+
 
 
 
@@ -26,7 +28,8 @@ function App() {
       {/* <h1 style={{textAlign:"center"}}>blockbuster deals !</h1>
       <hr/> */}
       {/* <Ludo /> */}
-      <TodoList />
+      {/* <TodoList /> */}
+      <Otp />
 
 
       {/* <ProductsTab/> */}
