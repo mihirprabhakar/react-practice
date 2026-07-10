@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function OTPGenerator() {
-  const [otp,setOtp]=useState("");
+  const [otp,setOtp]=useState("_ _ _ _ _ _");
 
   const generateOTP=()=>{
     const newOtp=Math.floor(100000 + Math.random() * 900000);
