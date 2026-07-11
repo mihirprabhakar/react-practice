@@ -19,7 +19,7 @@ function OTPGenerator() {
           <h3>Your OTP:</h3>
           <p
             style={{
-              fontSize: "30px",
+              fontSize: "29px",
               fontWeight: "bold",
               color: "#007bff",
             }}
