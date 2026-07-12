@@ -8,6 +8,8 @@ import LikeButton from './LikeButton';
 import Ludo from './Ludo';
 import TodoList from './TodoList';
 import Otp from './Otp';
+import Random from './Random';
+
 
 
 
@@ -29,7 +31,8 @@ function App() {
       <hr/> */}
       {/* <Ludo /> */}
       {/* <TodoList /> */}
-      <Otp />
+      {/* <Otp /> */}
+      <Random />
 
 
       {/* <ProductsTab/> */}
