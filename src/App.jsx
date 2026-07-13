@@ -9,6 +9,7 @@ import Ludo from './Ludo';
 import TodoList from './TodoList';
 import Otp from './Otp';
 import Random from './Random';
+import PasswordToggle from './PasswordToggle';
 
 
 
@@ -32,7 +33,8 @@ function App() {
       {/* <Ludo /> */}
       {/* <TodoList /> */}
       {/* <Otp /> */}
-      <Random />
+      {/* <Random /> */}
+      <PasswordToggle />
 
 
       {/* <ProductsTab/> */}
