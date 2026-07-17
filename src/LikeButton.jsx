@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
 
 const LikeButton = () => {
-    const [isLike,setIsLike]=useState(false);
+    const [isLiked,setIsLiked]=useState(false);
     const chechStatus=()=>{
-        setIsLike(!isLike);
+        setIsLiked(!isLiked);
     }
   return (
     <div>
       <p onClick={chechStatus}>
-        {isLike?<i class="fa-solid fa-heart" style={{color:"red"}}></i>:<i class="fa-regular fa-heart"></i>}
+        {isLiked?<i class="fa-solid fa-heart" style={{color:"red"}}></i>:<i class="fa-regular fa-heart"></i>}
       </p>
     </div>
   )

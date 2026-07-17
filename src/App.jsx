@@ -4,12 +4,12 @@ import './App.css'
 // import Product from './Product'
 // import UserName from './UserName';
 // import ProductsTab from './ProductsTab';
-// import LikeButton from './LikeButton';
+import LikeButton from './LikeButton';
 // import Ludo from './Ludo';
 // import TodoList from './TodoList';
 // import Otp from './Otp';
 // import Random from './Random';
-import PasswordToggle from './PasswordToggle';
+// import PasswordToggle from './PasswordToggle';
 
 
 
@@ -34,7 +34,8 @@ function App() {
       {/* <TodoList /> */}
       {/* <Otp /> */}
       {/* <Random /> */}
-      <PasswordToggle />
+      {/* <PasswordToggle /> */}
+      <LikeButton />
 
 
       {/* <ProductsTab/> */}
