@@ -21,7 +21,7 @@ const LotteryGame = () => {
         <button onClick={buyTicket}> Generate New Ticket</button>
 
         {isWinning && (
-          <h3 className="winner"> You Won! Congratulations! 🎉</h3>
+          <h3 className="winner"> You Won! Congratulations! </h3>
         )}
       </div>
     )
